@@ -95,10 +95,15 @@ In this project I am utilizing machine learning in order to develop a model that
 Below is the overview of how each model performed for high risk applications. 
 
 -RandomOverSampler: 50.49% balanced accuracy score, 33% precision score, 1% recall, and F1 of 2%.  
+
 -SMOTE: 66% balanced accuracy score, 1% precision, 63% recall, and 2% F1. 
+
 -ClusterCentroids: 66% balanced accuracy score, 1% precision, 69% recall, and 1% F1. 
+
 -SMOTEENN:54.47% balanced accuracy score, 1% precision, 72% recall, and an F1 of 2%. 
+
 -BalancedRandomForestClassifier: 75% balanced accuracy score, 3% precision, 63% recall, and an F1 of 6%. 
+
 -EasyEnsembleClassifier: 93.17% balanced accuracy score, 9% precision, recall of 92% and an F1 of 16%. 
 
 After running the testing across all 6 methods, the EasyEnsembleClassifier method was the best predictor. It produced a balanced accuracy score of 93%, a precision rate of 9% for high risk & 100% for low risk, recall scores of 92% for high risk & 94% for low risk, and an F1 score of 16% for high risk & 97% for low risk. The model may not be full-proof, but it does perform analysis at a very high level of accuracy. The bank must decide on the acceptable level of error, which is estimated around 7% with this model. 
